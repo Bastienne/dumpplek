@@ -15,11 +15,10 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
 }
+
 header main.nav{
     margin-top: 10px;
-
 }
 
 header ul{
@@ -31,9 +30,8 @@ header ul{
 
 header ul li{
     margin-right: 40px;
-
-
 }
+
 header nav.main-nav ul li a {
     color: white;
     font-family: 'open sans', sans-serif;
@@ -43,6 +41,7 @@ header nav.main-nav ul li a {
     letter-spacing: 2px;
     text-decoration: none;
 }
+
 header nav.main-nav ul li a:hover{
     color:#666;
 }
@@ -50,7 +49,6 @@ header nav.main-nav ul li a:hover{
 header nav.main-nav ul li a.active{
     color: yellow
 }
-
 
 #titelakkolade, #opdekopakkolade, #buisknopje h1, #buisknopje p{
     display: flex;
@@ -63,28 +61,74 @@ header nav.main-nav ul li a.active{
     width:50%;
     opacity: 0.5; 
 }
+
 #buisknopje h1{
     font-size: 75px;
     margin-top: 0;
     letter-spacing: 5px;
 }
+
 #buisknopje p{
     font-family:sans-serif;
     font-size: 30px; 
     opacity: 0;
-
 }
+
 #buisknopje p:hover{
     opacity:1;
 }
+
 #opdekopakkolade img{
     transform: rotateX(180deg);
-
-
 }
+
 .waarom-daarom{
     text-align: center;
 }
+
 .waarom-daarom h1:last-of-type{
     margin-bottom: 0;
+}
+
+#tijdlijn-box{
+    background-image: url(../images/madeleineroze.jpg);
+    display:flex;
+    height:50px;
+    padding-left:100px;
+    padding-right: 100px;
+
+}
+
+#tijdlijn-box #linkerknopje{
+    background-color: green;
+    width:50px;
+    order: 1;
+}
+
+#tijdlijn-box #tijdlijn{
+    background-color: red;
+    flex:1;
+    overflow: hidden;
+    order: 2;
+}
+
+#tijdlijn-box #rechterknopje{
+    background-color: green;
+    width:50px;
+    order: 3;
+}
+
+#scrollbar{
+    height: 100%;
+    width: 6000px;
+    background: linear-gradient(to right, white,black);
+}
+
+#tijdlijn-box #linkerknopje:hover ~ #tijdlijn #scrollbar {
+    background: purple;
+}
+
+#tijdlijn-box #rechterknopje:hover ~ #tijdlijn #scrollbar{
+    transform: translateX(-5500px);
+    transition-duration: 1s;
 }
