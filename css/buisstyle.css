@@ -1,10 +1,7 @@
 html,body{
     margin:0px;
     padding: 0px;
-}
-
-#achtergrond{
-    background-image:url(../images/madeleineroze.jpg);
+    background-color:pink;
 }
 
 header{
@@ -91,44 +88,74 @@ header nav.main-nav ul li a.active{
 }
 
 #tijdlijn-box{
-    background-image: url(../images/madeleineroze.jpg);
     display:flex;
     height:50px;
     padding-left:100px;
     padding-right: 100px;
+    margin-bottom: 10px;
 
 }
 
 #tijdlijn-box #linkerknopje{
-    background-color: green;
+    background-color:deeppink;
     width:50px;
     order: 1;
 }
 
 #tijdlijn-box #tijdlijn{
-    background-color: red;
     flex:1;
     overflow: hidden;
     order: 2;
 }
 
 #tijdlijn-box #rechterknopje{
-    background-color: green;
+    background-color:deeppink;
     width:50px;
     order: 3;
 }
 
 #scrollbar{
-    height: 100%;
-    width: 6000px;
-    background: linear-gradient(to right, white,black);
+    background-image: url(../images/tijdlijn.png);
+    display: flex;
+    height: 50px;
+    width: 4000px;
+    
+    /* background: linear-gradient(to right, white,black); */
+
+}
+#tijdlijn-box p{
+  display: flex;
+  justify-content: center;  
 }
 
 #tijdlijn-box #linkerknopje:hover ~ #tijdlijn #scrollbar {
-    background: purple;
+    transform: translateX(2000px);
+    transition-duration: 6s;
 }
 
 #tijdlijn-box #rechterknopje:hover ~ #tijdlijn #scrollbar{
-    transform: translateX(-5500px);
-    transition-duration: 1s;
+    transform: translateX(-2000px);
+    transition-duration: 6s;
+}
+
+#fotocollage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center; 
+  resize: both;
+}
+
+#fotocollage img{
+  width:50%;
+  opacity:0;
+}
+
+#fotocollage img:hover{
+  opacity:1;
+}
+
+#fotocollage p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
