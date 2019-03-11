@@ -1,7 +1,6 @@
 html,body{
     margin:0px;
     padding: 0px;
-    background-color:pink;
 }
 
 header{
@@ -47,6 +46,22 @@ header nav.main-nav ul li a.active{
     color: yellow
 }
 
+#video{
+    background-image: url(https://old.blog.phusion.nl/wp-content/uploads/2013/01/ninh.jpg);
+    height:140px;
+    opacity:0.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#video p{
+    margin: 0;
+    color:black;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
 #titelakkolade, #opdekopakkolade, #buisknopje h1, #buisknopje p{
     display: flex;
     justify-content: center;
@@ -56,13 +71,14 @@ header nav.main-nav ul li a.active{
     margin: 10px;
     height:50%;
     width:50%;
-    opacity: 0.5; 
+    opacity: 0.5;
 }
 
 #buisknopje h1{
     font-size: 75px;
     margin-top: 0;
     letter-spacing: 5px;
+    margin-bottom: 0;
 }
 
 #buisknopje p{
@@ -80,7 +96,10 @@ header nav.main-nav ul li a.active{
 }
 
 .waarom-daarom{
+    margin: 0 auto;
+    max-width: 950px;
     text-align: center;
+    border-top: 3px solid darkslategrey;
 }
 
 .waarom-daarom h1:last-of-type{
@@ -118,24 +137,37 @@ header nav.main-nav ul li a.active{
     background-image: url(../images/tijdlijn.png);
     display: flex;
     height: 50px;
-    width: 4000px;
-    
+    transform:rotateX(180deg);    
     /* background: linear-gradient(to right, white,black); */
 
 }
+
+@keyframes slide-right{
+    0% {background-position-x: 0px}
+    100%{background-position-x: -2000px}
+}
+
+@keyframes slide-left{
+    0% {background-position-x: 0px}
+    100%{background-position-x: 2000px}
+}
+
 #tijdlijn-box p{
   display: flex;
   justify-content: center;  
 }
 
 #tijdlijn-box #linkerknopje:hover ~ #tijdlijn #scrollbar {
-    transform: translateX(2000px);
+    /* transform: translateX(2000px);
     transition-duration: 6s;
+ */
+ animation:slide-right 6s ease;
 }
 
 #tijdlijn-box #rechterknopje:hover ~ #tijdlijn #scrollbar{
-    transform: translateX(-2000px);
-    transition-duration: 6s;
+    /* transform: translateX(-2000px);
+    transition-duration: 6s;*/
+    animation:slide-left 6s ease;
 }
 
 #fotocollage{
@@ -148,10 +180,13 @@ header nav.main-nav ul li a.active{
 #fotocollage img{
   width:50%;
   opacity:0;
+
 }
 
 #fotocollage img:hover{
   opacity:1;
+  transform:rotateX(360deg);
+  transition-duration: 10s;
 }
 
 #fotocollage p{
