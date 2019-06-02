@@ -59,6 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size:30px;
 	line-height:1.7em;
+	display: flex;
+  justify-content: center
 }
 h2 {
 	line-height:1.3em;
@@ -101,9 +103,15 @@ header .main-nav li a {
 	font-weight:600;
 	letter-spacing:2px;
 }
-header .main-nav li a:hover, header .main-nav li a.active {
+
+header .main-nav li a:hover{ 
 	color:#666;
 }
+
+header .main-nav li a.active {
+    color: #EE55FF;
+}
+
 #main-content .text-intro {
 	border-bottom:1px solid #e5e4e4;
 	float:left;
@@ -111,35 +119,44 @@ header .main-nav li a:hover, header .main-nav li a.active {
 	padding:25px 0;
 	margin-bottom:40px;
 }
+
 #main-content .text-intro h2 {
 	font-size:40px;
 	color:#606060;
 	text-align:center;
 }
+
 div.columns {
 	height:1%;
 }
+
 div.one-half {
 	width:48.5%;
 }
+
 div.one-third {
 	width:31.3%;
 }
+
 div.two-third {
 	width:65.64%;
 }
+
 div.one-fourth {
 	width:22.7%;
 }
+
 div.three-fourth {
 	width:74.23%;
 }
+
 div.one-half, div.one-third, div.two-third, div.three-fourth, div.one-fourth {
 	position:relative;
 	margin-left:3%;
 	float:left;
 	margin-bottom:1.55em;
 }
+
 div.one-half:first-child, div.one-third:first-child, div.two-third:first-child, div.three-fourth:first-child, div.one-fourth:first-child, .first {
 	margin-left:0 !important;
 	clear:left;
@@ -159,19 +176,24 @@ div.one-half:first-child, div.one-third:first-child, div.two-third:first-child, 
 .parents{
 	display: flex;
 	justify-content: center;
+	margin-bottom:20px;
+
 }
+
 .kinderen {
 	display: flex;
 	background-color: pink;
 	align-items: center;
     justify-content: center;
 } 
+
 .kinderen img {
 	opacity: 1;
 	transition: opacity 1s ease-in-out;
 	max-width: 200px;
 	max-height: 149px;
 }
+
 .kinderen img:hover {
 	opacity:1;
 }

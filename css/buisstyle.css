@@ -1,4 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 html,body{
+    font-family: "Open Sans", sans-serif;
     margin:0px;
     padding: 0px;
 }
@@ -34,7 +36,6 @@ header nav.main-nav ul li a {
     font-family: 'open sans', sans-serif;
     font-size: 10px;
     text-transform: uppercase;
-    font-weight: 600;
     letter-spacing: 2px;
     text-decoration: none;
 }
@@ -44,27 +45,10 @@ header nav.main-nav ul li a:hover{
 }
 
 header nav.main-nav ul li a.active{
-    color: yellow
+    color: #EE55FF;
 }
 
-/* #video{
-    background-image: url(https://old.blog.phusion.nl/wp-content/uploads/2013/01/ninh.jpg);
-    height:140px;
-    opacity:0.25;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-#video p{
-    margin: 0;
-    color:black;
-    font-family: sans-serif;
-    font-weight: bold;
-
-} */
-
-.work{
+.titel{
     background:url("../images/ijsland.jpg");
     min-height:200px;
     background-size:cover;
@@ -73,11 +57,9 @@ header nav.main-nav ul li a.active{
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 -1px 5px rgba(0,0,0,0.6);
-    font-family: "Open Sans", sans-serif;
-
-
 }
-.work h1{
+
+.titel h1{
   	font-weight: 300;
     font-size: 64px;
     color: #fff;
@@ -88,56 +70,13 @@ header nav.main-nav ul li a.active{
     margin-top:0;
     margin-bottom:10px;
 }
-#titelakkolade, #opdekopakkolade, #buisknopje h1, #buisknopje p{
-    display: flex;
-    justify-content: center;
-}
-
-#titelakkolade img, #opdekopakkolade img{
-    margin: 10px;
-    height:50%;
-    width:50%;
-    opacity: 0.5;
-}
-
-#buisknopje h1{
-    font-size: 75px;
-    margin-top: 0;
-    letter-spacing: 5px;
-    margin-bottom: 0;
-}
-
-#buisknopje p{
-    font-family:sans-serif;
-    font-size: 30px; 
-    opacity: 0;
-}
-
-#buisknopje p:hover{
-    opacity:1;
-}
-
-#opdekopakkolade img{
-    transform: rotateX(180deg);
-}
-
-.waarom-daarom{
-    margin: 0 auto;
-    max-width: 950px;
-    text-align: center;
-    border-top: 3px solid darkslategrey;
-}
-
-.waarom-daarom h1:last-of-type{
-    margin-bottom: 0;
-}
 
 #tijdlijn-box{
     display:flex;
     height:50px;
     padding-left:100px;
     padding-right: 100px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
 
 }
 
@@ -164,7 +103,7 @@ header nav.main-nav ul li a.active{
     display: flex;
     height: 50px;
     transform:rotateX(180deg);    
-    /* background: linear-gradient(to right, white,black); */
+    background: linear-gradient(to right, white,black); 
 
 }
 
@@ -184,18 +123,17 @@ header nav.main-nav ul li a.active{
 }
 
 #tijdlijn-box #linkerknopje:hover ~ #tijdlijn #scrollbar {
-    /* transform: translateX(2000px);
+    transform: translateX(2000px);
     transition-duration: 6s;
- */
- animation:slide-right 6s ease;
+    animation:slide-right 6s ease;
 }
 
 #tijdlijn-box #rechterknopje:hover ~ #tijdlijn #scrollbar{
-    /* transform: translateX(-2000px);
-    transition-duration: 6s;*/
+    transform: translateX(-2000px);
+    transition-duration: 6s;
     animation:slide-left 6s ease;
 }
-
+/*
 #fotocollage{
   display: flex;
   flex-wrap: wrap;
@@ -219,4 +157,9 @@ header nav.main-nav ul li a.active{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}*/
+
+#contact-form{
+    display: flex;
+    align-content: center;
 }
