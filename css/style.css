@@ -126,6 +126,11 @@ header .main-nav li a.active {
 	text-align:center;
 }
 
+#main-content .text-intro p {
+	font-size:21px;
+	color:#606060;
+	text-align:center;
+}
 div.columns {
 	height:1%;
 }
@@ -134,9 +139,9 @@ div.one-half {
 	width:48.5%;
 }
 
-div.one-third {
-	width:31.3%;
-}
+/*div.one-third {
+width:31.3%;
+}*/
 
 div.two-third {
 	width:65.64%;
@@ -184,7 +189,7 @@ div.one-half:first-child, div.one-third:first-child, div.two-third:first-child, 
 	display: flex;
 	background-color: pink;
 	align-items: center;
-    justify-content: center;
+  justify-content: center;
 } 
 
 .kinderen img {
@@ -339,7 +344,7 @@ footer .copyright a:hover {
 	height:16px;
 }
 .work, .home, .contact {
-	background:url("../images/ijsland.jpg");
+	background:url("../images/Niels.png");
 	background-size:cover;
 }
 @media handheld and (max-width:480px), screen and (max-device-width:480px), screen and (max-width:767px) {
